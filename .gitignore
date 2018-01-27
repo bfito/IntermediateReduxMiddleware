@@ -8,3 +8,6 @@ npm-debug.log
 /.idea
 
 package-lock.json
+
+// https://home.openweathermap.org/api_keys
+key.js  
