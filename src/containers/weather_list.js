@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+<<<<<<< Updated upstream
 import { Sparklines, Sparklinesline } from 'react-sparklines';
+=======
+import { Sparklines, SparklinesLine } from 'react-sparklines';
+>>>>>>> Stashed changes
 
 class WeatherList extends Component {
   renderWeather(cityData) {
@@ -11,8 +15,13 @@ class WeatherList extends Component {
       <tr key={name}>
         <td>{name}</td>
         <td>
+<<<<<<< Updated upstream
           <Sparklines data={temps} height={120} width={180}>
             <Sparklinesline color="red" />
+=======
+          <Sparklines height={120} width={180} data={temps}>
+            <SparklinesLine color="red" />
+>>>>>>> Stashed changes
           </Sparklines>
         </td>
       </tr>
