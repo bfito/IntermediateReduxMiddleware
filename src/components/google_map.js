@@ -1,9 +1,11 @@
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
+import {GOOGLE_MAPS_API_KEY} from '../../key';
 
 class GoogleMap extends Component {
   componentDidMount() {
-    new google.maps.Map(document.getElementById(`map`), {
+    // eslint-disable-next-line
+    new google.maps.Map(this.refs.map, {
       zoom: 12,
       center: {
         lat: this.props.lat,
@@ -14,7 +16,10 @@ class GoogleMap extends Component {
 
   render() {
     // this.ref.map
-    return <div id="map" />;
+    // eslint-disable-next-line
+    // return <div id="map" />;
+    // <div ref={div => this.map = div} />
+    return <div ref="map" />;
   }
 }
 
