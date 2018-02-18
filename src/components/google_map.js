@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
-import {GOOGLE_MAPS_API_KEY} from '../../key';
 
 class GoogleMap extends Component {
   componentDidMount() {
